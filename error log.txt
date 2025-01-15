@@ -1,0 +1,740 @@
+root@678826741b9942818ebc419a:~# sudo journalctl -u myservice.service
+Jan 15 21:28:01 678826741b9942818ebc419a systemd[1]: Started myservice.service - Gunic>
+Jan 15 21:28:02 678826741b9942818ebc419a gunicorn[23530]: [2025-01-15 21:28:02 +0000] >
+Jan 15 21:28:02 678826741b9942818ebc419a gunicorn[23530]: [2025-01-15 21:28:02 +0000] >
+Jan 15 21:28:03 678826741b9942818ebc419a gunicorn[23530]: [2025-01-15 21:28:03 +0000] >
+Jan 15 21:28:04 678826741b9942818ebc419a gunicorn[23530]: [2025-01-15 21:28:04 +0000] >
+Jan 15 21:28:05 678826741b9942818ebc419a gunicorn[23530]: [2025-01-15 21:28:05 +0000] >
+Jan 15 21:28:06 678826741b9942818ebc419a gunicorn[23530]: [2025-01-15 21:28:06 +0000] >
+Jan 15 21:28:07 678826741b9942818ebc419a gunicorn[23530]: [2025-01-15 21:28:07 +0000] >
+Jan 15 21:28:07 678826741b9942818ebc419a systemd[1]: myservice.service: Main process e>
+Jan 15 21:28:07 678826741b9942818ebc419a systemd[1]: myservice.service: Failed with re>
+Jan 15 21:34:48 678826741b9942818ebc419a systemd[1]: Started myservice.service - Gunic>
+Jan 15 21:34:48 678826741b9942818ebc419a gunicorn[26367]: [2025-01-15 21:34:48 +0000] >
+Jan 15 21:34:48 678826741b9942818ebc419a gunicorn[26367]: [2025-01-15 21:34:48 +0000] >
+Jan 15 21:34:49 678826741b9942818ebc419a gunicorn[26367]: [2025-01-15 21:34:49 +0000] >
+Jan 15 21:34:50 678826741b9942818ebc419a gunicorn[26367]: [2025-01-15 21:34:50 +0000] >
+Jan 15 21:34:51 678826741b9942818ebc419a gunicorn[26367]: [2025-01-15 21:34:51 +0000] >
+Jan 15 21:34:52 678826741b9942818ebc419a gunicorn[26367]: [2025-01-15 21:34:52 +0000] >
+Jan 15 21:34:53 678826741b9942818ebc419a gunicorn[26367]: [2025-01-15 21:34:53 +0000] >
+Jan 15 21:34:53 678826741b9942818ebc419a systemd[1]: myservice.service: Main process e>
+Jan 15 21:34:53 678826741b9942818ebc419a systemd[1]: myservice.service: Failed with re>
+Jan 15 21:42:52 678826741b9942818ebc419a systemd[1]: Started myservice.service - Gunic>
+Jan 15 21:42:52 678826741b9942818ebc419a gunicorn[29681]: [2025-01-15 21:42:52 +0000] >
+Jan 15 21:42:52 678826741b9942818ebc419a gunicorn[29681]: [2025-01-15 21:42:52 +0000] >
+Jan 15 21:42:53 678826741b9942818ebc419a gunicorn[29681]: [2025-01-15 21:42:53 +0000] >
+Jan 15 21:42:54 678826741b9942818ebc419a gunicorn[29681]: [2025-01-15 21:42:54 +0000] >
+Jan 15 21:42:55 678826741b9942818ebc419a gunicorn[29681]: [2025-01-15 21:42:55 +0000] >
+Jan 15 21:42:56 678826741b9942818ebc419a gunicorn[29681]: [2025-01-15 21:42:56 +0000] >
+Jan 15 21:42:57 678826741b9942818ebc419a gunicorn[29681]: [2025-01-15 21:42:57 +0000] >
+Jan 15 21:42:57 678826741b9942818ebc419a systemd[1]: myservice.service: Main process e>
+Jan 15 21:42:57 678826741b9942818ebc419a systemd[1]: myservice.service: Failed with re>
+Jan 15 21:47:25 678826741b9942818ebc419a systemd[1]: Started myservice.service - Gunic>
+Jan 15 21:47:26 678826741b9942818ebc419a gunicorn[31400]: [2025-01-15 21:47:26 +0000] >
+Jan 15 21:47:26 678826741b9942818ebc419a gunicorn[31400]: [2025-01-15 21:47:26 +0000] >
+Jan 15 21:47:26 678826741b9942818ebc419a gunicorn[31400]: [2025-01-15 21:47:26 +0000] >
+Jan 15 21:47:26 678826741b9942818ebc419a gunicorn[31407]: [2025-01-15 21:47:26 +0000] >
+Jan 15 21:47:26 678826741b9942818ebc419a gunicorn[31408]: [2025-01-15 21:47:26 +0000] >
+Jan 15 21:47:26 678826741b9942818ebc419a gunicorn[31409]: [2025-01-15 21:47:26 +0000] >
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]: [2025-01-15 21:58:00,500] ER>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]: Traceback (most recent call >
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     self.dialect.do_execute(
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     cursor.execute(statement>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]: sqlite3.OperationalError: no>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]: The above exception was the >
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]: Traceback (most recent call >
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     response = self.full_dis>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:                ^^^^^^^^^^^^^>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     rv = self.handle_user_ex>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:          ^^^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     rv = self.dispatch_reque>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:          ^^^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     return self.ensure_sync(>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     return self._run_view(f,>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     return fn(self, *args, *>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     count, data = self.get_l>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:                   ^^^^^^^^^^>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     count = count_query.scal>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:             ^^^^^^^^^^^^^^^^>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     ret = self.one()
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:           ^^^^^^^^^^
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     return self._iter().one(>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:            ^^^^^^^^^^^^
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     result: Union[ScalarResu>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:                             >
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     return self._execute_int>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     result: Result[Any] = co>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:                           ^^>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     result = conn.execute(
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:              ^^^^^^^^^^^^^
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     return meth(
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:            ^^^^^
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     return connection._execu>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     ret = self._execute_cont>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:           ^^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     return self._exec_single>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     self._handle_dbapi_excep>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     raise sqlalchemy_excepti>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     self.dialect.do_execute(
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:   File "/opt/myservice/venv/>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]:     cursor.execute(statement>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]: sqlalchemy.exc.OperationalEr>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]: [SQL: SELECT count(?) AS cou>
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]: FROM user]
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]: [parameters: ('*',)]
+Jan 15 21:58:00 678826741b9942818ebc419a gunicorn[31409]: (Background on this error at>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]: [2025-01-15 21:58:04,617] ER>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]: Traceback (most recent call >
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     self.dialect.do_execute(
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     cursor.execute(statement>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]: sqlite3.OperationalError: no>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]: The above exception was the >
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]: Traceback (most recent call >
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     response = self.full_dis>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:                ^^^^^^^^^^^^^>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     rv = self.handle_user_ex>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:          ^^^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     rv = self.dispatch_reque>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:          ^^^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     return self.ensure_sync(>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     return self._run_view(f,>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     return fn(self, *args, *>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     count, data = self.get_l>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:                   ^^^^^^^^^^>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     count = count_query.scal>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:             ^^^^^^^^^^^^^^^^>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     ret = self.one()
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:           ^^^^^^^^^^
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     return self._iter().one(>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:            ^^^^^^^^^^^^
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     result: Union[ScalarResu>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:                             >
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     return self._execute_int>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     result: Result[Any] = co>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:                           ^^>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     result = conn.execute(
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:              ^^^^^^^^^^^^^
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     return meth(
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:            ^^^^^
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     return connection._execu>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     ret = self._execute_cont>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:           ^^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     return self._exec_single>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     self._handle_dbapi_excep>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     raise sqlalchemy_excepti>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     self.dialect.do_execute(
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]:     cursor.execute(statement>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]: sqlalchemy.exc.OperationalEr>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]: [SQL: SELECT count(?) AS cou>
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]: FROM user]
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]: [parameters: ('*',)]
+Jan 15 21:58:04 678826741b9942818ebc419a gunicorn[31408]: (Background on this error at>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]: [2025-01-15 21:58:07,351] ER>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]: Traceback (most recent call >
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     self.dialect.do_execute(
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     cursor.execute(statement>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]: sqlite3.OperationalError: no>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]: The above exception was the >
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]: Traceback (most recent call >
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     response = self.full_dis>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:                ^^^^^^^^^^^^^>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     rv = self.handle_user_ex>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:          ^^^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     rv = self.dispatch_reque>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:          ^^^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     return self.ensure_sync(>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     return self._run_view(f,>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     return fn(self, *args, *>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     count, data = self.get_l>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:                   ^^^^^^^^^^>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     count = count_query.scal>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:             ^^^^^^^^^^^^^^^^>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     ret = self.one()
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:           ^^^^^^^^^^
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     return self._iter().one(>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:            ^^^^^^^^^^^^
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     result: Union[ScalarResu>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:                             >
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     return self._execute_int>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     result: Result[Any] = co>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:                           ^^>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     result = conn.execute(
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:              ^^^^^^^^^^^^^
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     return meth(
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:            ^^^^^
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     return connection._execu>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     ret = self._execute_cont>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:           ^^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     return self._exec_single>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     self._handle_dbapi_excep>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     raise sqlalchemy_excepti>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     self.dialect.do_execute(
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:   File "/opt/myservice/venv/>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]:     cursor.execute(statement>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]: sqlalchemy.exc.OperationalEr>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]: [SQL: SELECT count(?) AS cou>
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]: FROM request_log]
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]: [parameters: ('*',)]
+Jan 15 21:58:07 678826741b9942818ebc419a gunicorn[31408]: (Background on this error at>
+Jan 15 22:04:42 678826741b9942818ebc419a gunicorn[31400]: [2025-01-15 22:04:42 +0000] >
+Jan 15 22:04:42 678826741b9942818ebc419a systemd[1]: Stopping myservice.service - Guni>
+Jan 15 22:04:42 678826741b9942818ebc419a gunicorn[31407]: [2025-01-15 22:04:42 +0000] >
+Jan 15 22:04:42 678826741b9942818ebc419a gunicorn[31409]: [2025-01-15 22:04:42 +0000] >
+Jan 15 22:04:42 678826741b9942818ebc419a gunicorn[31408]: [2025-01-15 22:04:42 +0000] >
+Jan 15 22:04:42 678826741b9942818ebc419a gunicorn[31400]: [2025-01-15 22:04:42 +0000] >
+Jan 15 22:04:42 678826741b9942818ebc419a gunicorn[31400]: [2025-01-15 22:04:42 +0000] >
+Jan 15 22:04:42 678826741b9942818ebc419a systemd[1]: myservice.service: Deactivated su>
+Jan 15 22:04:42 678826741b9942818ebc419a systemd[1]: Stopped myservice.service - Gunic>
+Jan 15 22:04:42 678826741b9942818ebc419a systemd[1]: myservice.service: Consumed 2.369>
+Jan 15 22:04:42 678826741b9942818ebc419a systemd[1]: Started myservice.service - Gunic>
+Jan 15 22:04:43 678826741b9942818ebc419a gunicorn[38005]: [2025-01-15 22:04:43 +0000] >
+Jan 15 22:04:43 678826741b9942818ebc419a gunicorn[38005]: [2025-01-15 22:04:43 +0000] >
+Jan 15 22:04:43 678826741b9942818ebc419a gunicorn[38005]: [2025-01-15 22:04:43 +0000] >
+Jan 15 22:04:43 678826741b9942818ebc419a gunicorn[38035]: [2025-01-15 22:04:43 +0000] >
+Jan 15 22:04:43 678826741b9942818ebc419a gunicorn[38036]: [2025-01-15 22:04:43 +0000] >
+Jan 15 22:04:43 678826741b9942818ebc419a gunicorn[38039]: [2025-01-15 22:04:43 +0000] >
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]: [2025-01-15 22:10:12,790] ER>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]: Traceback (most recent call >
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     self.dialect.do_execute(
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     cursor.execute(statement>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]: sqlite3.OperationalError: no>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]: The above exception was the >
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]: Traceback (most recent call >
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     response = self.full_dis>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:                ^^^^^^^^^^^^^>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     rv = self.handle_user_ex>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:          ^^^^^^^^^^^^^^^^^^^>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     rv = self.dispatch_reque>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:          ^^^^^^^^^^^^^^^^^^^>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     return self.ensure_sync(>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     return self._run_view(f,>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     return fn(self, *args, *>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     count, data = self.get_l>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:                   ^^^^^^^^^^>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     count = count_query.scal>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:             ^^^^^^^^^^^^^^^^>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     ret = self.one()
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:           ^^^^^^^^^^
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     return self._iter().one(>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:            ^^^^^^^^^^^^
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     result: Union[ScalarResu>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:                             >
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     return self._execute_int>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     result: Result[Any] = co>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:                           ^^>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     result = conn.execute(
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:              ^^^^^^^^^^^^^
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     return meth(
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:            ^^^^^
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     return connection._execu>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     ret = self._execute_cont>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:           ^^^^^^^^^^^^^^^^^^>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     return self._exec_single>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     self._handle_dbapi_excep>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     raise sqlalchemy_excepti>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     self.dialect.do_execute(
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]:     cursor.execute(statement>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]: sqlalchemy.exc.OperationalEr>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]: [SQL: SELECT count(?) AS cou>
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]: FROM user]
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]: [parameters: ('*',)]
+Jan 15 22:10:12 678826741b9942818ebc419a gunicorn[38035]: (Background on this error at>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]: [2025-01-15 22:10:15,949] ER>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]: Traceback (most recent call >
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     self.dialect.do_execute(
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     cursor.execute(statement>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]: sqlite3.OperationalError: no>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]: The above exception was the >
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]: Traceback (most recent call >
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     response = self.full_dis>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:                ^^^^^^^^^^^^^>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     rv = self.handle_user_ex>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:          ^^^^^^^^^^^^^^^^^^^>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     rv = self.dispatch_reque>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:          ^^^^^^^^^^^^^^^^^^^>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     return self.ensure_sync(>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     return self._run_view(f,>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     return fn(self, *args, *>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     count, data = self.get_l>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:                   ^^^^^^^^^^>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     count = count_query.scal>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:             ^^^^^^^^^^^^^^^^>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     ret = self.one()
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:           ^^^^^^^^^^
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     return self._iter().one(>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     result: Union[ScalarResu>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:                             >
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     return self._execute_int>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     result: Result[Any] = co>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:                           ^^>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     result = conn.execute(
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:              ^^^^^^^^^^^^^
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     return meth(
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     return connection._execu>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     ret = self._execute_cont>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:           ^^^^^^^^^^^^^^^^^^>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     return self._exec_single>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     self._handle_dbapi_excep>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     raise sqlalchemy_excepti>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     self.dialect.do_execute(
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]:     cursor.execute(statement>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]: sqlalchemy.exc.OperationalEr>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]: [SQL: SELECT count(?) AS cou>
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]: FROM request_log]
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]: [parameters: ('*',)]
+Jan 15 22:10:15 678826741b9942818ebc419a gunicorn[38039]: (Background on this error at>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]: [2025-01-15 22:11:36,949] ER>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]: Traceback (most recent call >
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     self.dialect.do_execute(
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     cursor.execute(statement>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]: sqlite3.OperationalError: no>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]: The above exception was the >
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]: Traceback (most recent call >
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     response = self.full_dis>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:                ^^^^^^^^^^^^^>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     rv = self.handle_user_ex>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:          ^^^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     rv = self.dispatch_reque>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:          ^^^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     return self.ensure_sync(>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     return self._run_view(f,>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     return fn(self, *args, *>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     count, data = self.get_l>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:                   ^^^^^^^^^^>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     count = count_query.scal>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:             ^^^^^^^^^^^^^^^^>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     ret = self.one()
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:           ^^^^^^^^^^
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     return self._iter().one(>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:            ^^^^^^^^^^^^
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     result: Union[ScalarResu>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:                             >
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     return self._execute_int>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     result: Result[Any] = co>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:                           ^^>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     result = conn.execute(
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:              ^^^^^^^^^^^^^
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     return meth(
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:            ^^^^^
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     return connection._execu>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     ret = self._execute_cont>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:           ^^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     return self._exec_single>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     self._handle_dbapi_excep>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     raise sqlalchemy_excepti>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     self.dialect.do_execute(
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:   File "/opt/myservice/venv/>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]:     cursor.execute(statement>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]: sqlalchemy.exc.OperationalEr>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]: [SQL: SELECT count(?) AS cou>
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]: FROM user]
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]: [parameters: ('*',)]
+Jan 15 22:11:36 678826741b9942818ebc419a gunicorn[38035]: (Background on this error at>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]: [2025-01-15 22:11:43,482] ER>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]: Traceback (most recent call >
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     self.dialect.do_execute(
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     cursor.execute(statement>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]: sqlite3.OperationalError: no>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]: The above exception was the >
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]: Traceback (most recent call >
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     response = self.full_dis>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:                ^^^^^^^^^^^^^>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     rv = self.handle_user_ex>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:          ^^^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     rv = self.dispatch_reque>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:          ^^^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     return self.ensure_sync(>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     return self._run_view(f,>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     return fn(self, *args, *>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     count, data = self.get_l>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:                   ^^^^^^^^^^>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     count = count_query.scal>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:             ^^^^^^^^^^^^^^^^>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     ret = self.one()
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:           ^^^^^^^^^^
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     return self._iter().one(>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:            ^^^^^^^^^^^^
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     result: Union[ScalarResu>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:                             >
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     return self._execute_int>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     result: Result[Any] = co>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:                           ^^>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     result = conn.execute(
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:              ^^^^^^^^^^^^^
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     return meth(
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:            ^^^^^
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     return connection._execu>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     ret = self._execute_cont>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:           ^^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     return self._exec_single>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     self._handle_dbapi_excep>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     raise sqlalchemy_excepti>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     self.dialect.do_execute(
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:   File "/opt/myservice/venv/>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]:     cursor.execute(statement>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]: sqlalchemy.exc.OperationalEr>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]: [SQL: SELECT count(?) AS cou>
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]: FROM user]
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]: [parameters: ('*',)]
+Jan 15 22:11:43 678826741b9942818ebc419a gunicorn[38036]: (Background on this error at>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]: [2025-01-15 22:11:45,638] ER>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]: Traceback (most recent call >
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     self.dialect.do_execute(
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     cursor.execute(statement>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]: sqlite3.OperationalError: no>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]: The above exception was the >
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]: Traceback (most recent call >
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     response = self.full_dis>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:                ^^^^^^^^^^^^^>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     rv = self.handle_user_ex>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:          ^^^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     rv = self.dispatch_reque>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:          ^^^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     return self.ensure_sync(>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     return self._run_view(f,>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     return fn(self, *args, *>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     count, data = self.get_l>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:                   ^^^^^^^^^^>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     count = count_query.scal>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:             ^^^^^^^^^^^^^^^^>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     ret = self.one()
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:           ^^^^^^^^^^
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     return self._iter().one(>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     result: Union[ScalarResu>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:                             >
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     return self._execute_int>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     result: Result[Any] = co>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:                           ^^>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     result = conn.execute(
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:              ^^^^^^^^^^^^^
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     return meth(
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     return connection._execu>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     ret = self._execute_cont>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:           ^^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     return self._exec_single>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     self._handle_dbapi_excep>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     raise sqlalchemy_excepti>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     self.dialect.do_execute(
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]:     cursor.execute(statement>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]: sqlalchemy.exc.OperationalEr>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]: [SQL: SELECT count(?) AS cou>
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]: FROM request_log]
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]: [parameters: ('*',)]
+Jan 15 22:11:45 678826741b9942818ebc419a gunicorn[38039]: (Background on this error at>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]: [2025-01-15 22:20:43,959] ER>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]: Traceback (most recent call >
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     self.dialect.do_execute(
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     cursor.execute(statement>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]: sqlite3.OperationalError: no>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]: The above exception was the >
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]: Traceback (most recent call >
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     response = self.full_dis>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:                ^^^^^^^^^^^^^>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     rv = self.handle_user_ex>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:          ^^^^^^^^^^^^^^^^^^^>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     rv = self.dispatch_reque>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:          ^^^^^^^^^^^^^^^^^^^>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     return self.ensure_sync(>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     return self._run_view(f,>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     return fn(self, *args, *>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     count, data = self.get_l>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:                   ^^^^^^^^^^>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     count = count_query.scal>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:             ^^^^^^^^^^^^^^^^>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     ret = self.one()
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:           ^^^^^^^^^^
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     return self._iter().one(>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     result: Union[ScalarResu>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:                             >
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     return self._execute_int>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     result: Result[Any] = co>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:                           ^^>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     result = conn.execute(
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:              ^^^^^^^^^^^^^
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     return meth(
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     return connection._execu>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     ret = self._execute_cont>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:           ^^^^^^^^^^^^^^^^^^>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     return self._exec_single>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:            ^^^^^^^^^^^^^^^^^>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     self._handle_dbapi_excep>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     raise sqlalchemy_excepti>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     self.dialect.do_execute(
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:   File "/opt/myservice/venv/>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]:     cursor.execute(statement>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]: sqlalchemy.exc.OperationalEr>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]: [SQL: SELECT count(?) AS cou>
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]: FROM user]
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]: [parameters: ('*',)]
+Jan 15 22:20:43 678826741b9942818ebc419a gunicorn[38039]: (Background on this error at>
+lines 699-738/738 (END)
